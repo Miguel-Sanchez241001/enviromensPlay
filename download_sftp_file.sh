@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# Credenciales del servidor SFTP
+# Credenciales del servidor FTP
 HOST="eu-central-1.sftpcloud.io"
-USERNAME="2388baf2b5764001be859a265648a65b"
-PASSWORD="ZekeS7yj9vL6GzJhF8JPrAUDeZApxbGO"
+USERNAME="5d18b7d8da6d4beca501181c5b2ce6fb"
+PASSWORD="85MPzLtOcaYFKK6ynVtlqilsMP92Q3wp"
 REMOTE_PATH="/appGasPedidos.war"  # Ruta del archivo en el servidor
 LOCAL_PATH="./appGasPedidos.war"  # Ruta donde se guardará el archivo localmente
 
 # Descargando el archivo usando curl y evitando la verificación del certificado (-k)
-curl -k --user "$USERNAME:$PASSWORD" "sftp://$HOST$REMOTE_PATH" --output "$LOCAL_PATH"
+curl -k --user "$USERNAME:$PASSWORD" "ftp://$HOST:21$REMOTE_PATH" --output "$LOCAL_PATH"
 
 # Verificar si la descarga fue exitosa
 if [ $? -eq 0 ]; then
