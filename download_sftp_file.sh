@@ -2,8 +2,8 @@
 
 # Credenciales del servidor FTP
 HOST="eu-central-1.sftpcloud.io"
-USERNAME="5d18b7d8da6d4beca501181c5b2ce6fb"
-PASSWORD="85MPzLtOcaYFKK6ynVtlqilsMP92Q3wp"
+USERNAME="297d46ea5d4d44609d52ec082e414ce6"
+PASSWORD="wmiyStbwKPOsdJdcc3zIcbadzGE9WJ9g"
 REMOTE_PATH="/appGasPedidos.war"  # Ruta del archivo en el servidor
 LOCAL_PATH="./appGasPedidos.war"  # Ruta donde se guardará el archivo localmente
 
